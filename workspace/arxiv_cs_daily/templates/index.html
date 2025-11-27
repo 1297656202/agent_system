@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>arXiv CS Daily</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>arXiv CS Daily</h1>
+
+<nav>
+    {% for c in categories %}
+    <a href="/?cat={{c}}" class="{{ 'active' if cur==c else '' }}">{{c}}</a>
+    {% endfor %}
+</nav>
+
+<hr>
+
+<h2>最新论文（{{cur}}）</h2>
+
+{% for p in papers %}
+<div class="paper">
+    <a href="/paper/{{p.id.split('/')[-1]}}">
+        <strong>{{ p.title }}</strong>
+    </a>
+    <div>作者：{{ p.authors|join(', ') }}</div>
+    <div>提交时间：{{ p.published }}</div>
+    <div>领域：{{ p.category }}</div>
+</div>
+{% endfor %}
+
+</body>
+</html>

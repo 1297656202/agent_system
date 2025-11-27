@@ -1,0 +1,3 @@
+Build an 'arXiv CS Daily' web application that allows users to 
+navigate CS categories, view daily updated paper lists and see a 
+dedicated paper detail page with citation tools.
