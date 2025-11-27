@@ -18,7 +18,7 @@ This project implements a fully automated multi-agent coding system that convert
    - Base64 padding recovery
    - Skips binary files (ico, png, jpg) because LLMs cannot generate them reliably
 3. Requirement-driven
-    The system reads requirement text from question.txt and builds the full project automatically.
+   The system reads requirement text from question.txt and builds the full project automatically.
 
 ------
 
@@ -64,10 +64,10 @@ agent_system/
 ## Installation
 
 1. Install Python dependencies:
-    pip install flask requests feedparser
+   pip install flask requests feedparser
 2. Set DeepSeek API key
-    Windows: setx DEEPSEEK_API_KEY "your_api_key_here"
-    macOS/Linux: export DEEPSEEK_API_KEY="your_api_key_here"
+   Windows: setx DEEPSEEK_API_KEY "your_api_key_here"
+   macOS/Linux: export DEEPSEEK_API_KEY="your_api_key_here"
 
 ------
 
@@ -75,7 +75,7 @@ agent_system/
 
 1. Write your requirement into question.txt
 2. Execute the system:
-    python main.py
+   python main.py
 3. The generated project will appear in the workspace directory.
 
 ------
